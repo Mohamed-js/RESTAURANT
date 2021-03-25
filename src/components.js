@@ -5,17 +5,10 @@ const text = (elem, text, className) => {
     return t
 }
 
-function switchTab(tabName) {
-    let menu = document.getElementById('menu');
-    menu.innerHTML = ''
-    menu.appendChild(tabName)
-}
-
 function tabs() {
     const navbar = text('ul','','navbar')
     for (var i = 0; i < arguments.length; i+=1) {
         let el = text('li',`${arguments[i]}`, 'nav-item');
-        el.onclick = () => switchTab(el.textContent)
         navbar.appendChild(el)
     }
     return navbar
@@ -27,7 +20,7 @@ function menuItems(arr) {
         let card = text('div', '', 'card');
         let img = text('img','', 'item-img');
         img.setAttribute('alt',`${arr[i].img}`)
-        // img.setAttribute('src',`${arr[i].img}`)
+        img.setAttribute('src',`/assets/imgs/${arr[i].img}.png`)
         let name = text('h4',`${arr[i].name}`, 'item-name');
         let price = text('p',`${arr[i].price} -EGP`, 'item-price');
 
@@ -39,8 +32,10 @@ function menuItems(arr) {
     return menu
 }
 
+function createMain() {
+    const main = text('div', '', 'main')
+    main.id = 'main'
+    return main
+}
 
-
-
-
-export { text, tabs, menuItems }
+export { text, tabs, menuItems, createMain }
