@@ -7,7 +7,7 @@
 
 body {
     padding: 0;
-    background-image: url("/assets/imgs/board1.jpg");
+    background-image: url("../imgs/board1.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;

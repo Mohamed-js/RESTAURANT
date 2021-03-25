@@ -20,7 +20,7 @@ function menuItems(arr) {
         let card = text('div', '', 'card');
         let img = text('img','', 'item-img');
         img.setAttribute('alt',`${arr[i].img}`)
-        img.setAttribute('src',`/assets/imgs/${arr[i].img}.png`)
+        img.setAttribute('src',`./imgs/${arr[i].img}.png`)
         let name = text('h4',`${arr[i].name}`, 'item-name');
         let price = text('p',`${arr[i].price} -EGP`, 'item-price');
 
