@@ -21,7 +21,26 @@ let arr = [
         price: "50",
         img: "meat"
     },
-
+    {
+        name: "Pizza Chicken",
+        price: "50",
+        img: "chicken"
+    },
+    {
+        name: "Pizza Meat",
+        price: "50",
+        img: "meat"
+    },
+    {
+        name: "Pizza Mashroom",
+        price: "50",
+        img: "mashroom"
+    },
+    {
+        name: "Pizza Ciao",
+        price: "40",
+        img: "ciao"
+    }
 ]
 
 function menu() {
