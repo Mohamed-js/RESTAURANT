@@ -2,8 +2,7 @@ import * as components from './components'
 
 const page = document.getElementById('content')
 
-let header = components.text('h1','Hello World!', 'header')
+page.appendChild(components.tabs('Home', 'Menu', 'Contact'))
 
-let header2 = components.text('h2', '', 'header2')
 
-console.log(components.tabs('Home','Menu','Contact'))
+
