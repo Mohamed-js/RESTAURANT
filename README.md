@@ -10,6 +10,11 @@ In this project:
 - Made a menu page for the restaurant.
 - Made a contact page for the restaurant.
 
+## Live Demo
+
+![LIVE!](https://mohamed-js.github.io/RESTAURANT/)
+
+
 ## Usage
 
 - Clone the repo "https://github.com/Mohamed-js/restaurant.git".
