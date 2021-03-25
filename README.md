@@ -12,7 +12,7 @@ In this project:
 
 ## Live Demo
 
-![LIVE!](https://mohamed-js.github.io/RESTAURANT/)
+[LIVE!](https://mohamed-js.github.io/RESTAURANT/)
 
 
 ## Usage
