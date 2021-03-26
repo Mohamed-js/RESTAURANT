@@ -5,16 +5,7 @@ const text = (elem, text, className) => {
   return t;
 };
 
-function tabs() {
-  const navbar = text("ul", "", "navbar");
-  for (var i = 0; i < arguments.length; i += 1) {
-    let el = text("li", `${arguments[i]}`, "nav-item");
-    navbar.appendChild(el);
-  }
-  return navbar;
-}
-
-function menuItems(arr) {
+const menuItems = (arr) => {
   const menu = text("section", "", "menu");
   for (var i = 0; i < arr.length; i += 1) {
     let card = text("div", "", "card");
@@ -32,7 +23,16 @@ function menuItems(arr) {
   return menu;
 }
 
-function createMain() {
+function tabs() {
+  const navbar = text("ul", "", "navbar");
+  for (var i = 0; i < arguments.length; i += 1) {
+    let el = text("li", `${arguments[i]}`, "nav-item");
+    navbar.appendChild(el);
+  }
+  return navbar;
+}
+
+const createMain = () => {
   const main = text("div", "", "main");
   main.id = "main";
   return main;

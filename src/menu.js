@@ -43,7 +43,7 @@ let arr = [
     }
 ]
 
-function menu() {
+const menu = () => {
 
     const head = components.text('h1', 'Our Menu', 'head')
     const menu = components.text('div', '', 'menu')

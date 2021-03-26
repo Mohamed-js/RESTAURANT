@@ -12,11 +12,10 @@ let main = document.getElementById('main');
 const navItems = document.querySelectorAll('.nav-item')
 navItems.forEach(item => {
     item.onclick = () => {
-        if(item.textContent === 'Home')     {var tab = home.home;}
-        if(item.textContent === 'Menu')     {var tab = menu.menu;}
-        if(item.textContent === 'Contact')  {var tab = contact.contact;}
         main.innerHTML =''
-        main.appendChild(tab())
+        if(item.textContent === 'Home')     main.appendChild(home.home());
+        if(item.textContent === 'Menu')     main.appendChild(menu.menu());
+        if(item.textContent === 'Contact')  main.appendChild(contact.contact());
     }
 });
 

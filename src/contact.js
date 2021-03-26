@@ -1,6 +1,6 @@
 import * as components from './components'
 
-function contact() {
+const contact = () => {
     const head = components.text('h1', 'Contact', 'head')
     const slogan = components.text('h5', 'Phone: +201100086711', 'slogan1')
     const slogan2 = components.text('a', 'Portfolio', 'slogan2')
