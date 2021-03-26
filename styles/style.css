@@ -14,6 +14,7 @@ body {
     font-size: 18px;
     font-family: "Walter Turncoat", cursive;
     color: rgb(239 239 239);
+    height: 100%;
 }
 
 .content {
